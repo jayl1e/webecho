@@ -86,7 +86,7 @@ func echoBodyHandler(w http.ResponseWriter, r *http.Request) {
 }
 func metricHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/plain")
-	content := `up{svc="netecho"} 1`
+	content := `up{svc="webecho"} 1`
 	w.Write([]byte(content))
 }
 

@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: netecho
-  name: netecho
+    app: webecho
+  name: webecho
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: netecho
+      app: webecho
   template:
     metadata:
       labels:
-        app: netecho
+        app: webecho
     spec:
       containers:
-      - name: netecho
-        image: lijie0123/netecho:slim
+      - name: webecho
+        image: lijie0123/webecho:slim
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -61,11 +61,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: netecho
+  name: webecho
 spec:
   ports:
   - name: http
     port: 80
     targetPort: http
   selector:
-    app: netecho
+    app: webecho

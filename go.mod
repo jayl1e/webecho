@@ -1,4 +1,4 @@
-module jayjaylee.com/netecho
+module jayjaylee.com/webecho
 
 go 1.24.1
 
