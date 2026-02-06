@@ -9,4 +9,4 @@ build:
 build-dbg:
 	go build -trimpath -gcflags="-N -l" -o webecho . 
 build-slim:
-	CGO_ENABLED=0 go build -trimpath -o webecho .
+	CGO_ENABLED=0 go build -ldflags="-s -w" -trimpath -o webecho .
