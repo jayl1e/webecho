@@ -23,4 +23,4 @@ jobs:
       with:
         file: slim.Dockerfile
         tags: jayl1e/webecho:latest
-        platforms: linux/amd64,linux/arm64,linux/risv64,windows/amd64
+        platforms: linux/amd64,linux/arm64,linux/riscv64,linux/386,linux/arm/v7
