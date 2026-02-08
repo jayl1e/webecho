@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webecho
-        image: lijie0123/webecho:slim
+        image: jayl1e/webecho:slim
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
